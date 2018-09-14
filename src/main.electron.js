@@ -38,7 +38,7 @@ const createWindow = () => {
   });
 
 
-  mainWindow.webContents.on('dom-ready', () => {
+  mainWindow.webContents.on('dom-ready', (e) => {
     var t = mainWindow.webContents;
   });
 
