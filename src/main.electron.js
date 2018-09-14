@@ -19,6 +19,12 @@ const createWindow = () => {
   // and load the index.html of the app.
   //mainWindow.loadURL(`file://${__dirname}/index.html`);
   mainWindow.loadURL(`https://google.com`);
+  mainWindow.maximize();
+
+  mainWindow.webContents.executeJavaScript(`document.querySelector('input[name="q"]').value = "testing this"`, function (result) {
+    console.log(result)
+  })
+
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
@@ -30,6 +36,12 @@ const createWindow = () => {
     // when you should delete the corresponding element.
     mainWindow = null;
   });
+
+
+  mainWindow.webContents.on('dom-ready', () => {
+    var t = mainWindow.webContents;
+  });
+
 };
 
 // This method will be called when Electron has finished
