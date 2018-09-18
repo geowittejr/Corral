@@ -56,9 +56,14 @@
     "redux": "^4.0.0"
   },
   "devDependencies": {
+    "@webpack-cli/init": "^0.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
     "electron-forge": "^5.2.2",
     "electron-prebuilt-compile": "2.0.7",
     "eslint": "^3.19.0",
@@ -66,6 +71,10 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
     "typescript": "^3.0.3",
     "webpack": "^4.19.0",
     "webpack-cli": "^3.1.0"
