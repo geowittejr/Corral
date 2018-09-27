@@ -14,3 +14,6 @@ It appears that I will want to create a page using a BrowserWindow that has an h
 
 Here's an example project that does just that:
 https://github.com/brrd/electron-tabs
+
+Here's another:
+https://blog.jscrambler.com/building-a-web-browser-using-electron/
