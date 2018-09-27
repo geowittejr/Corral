@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, session } from 'electron';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -17,13 +17,14 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  //mainWindow.loadURL(`file://${__dirname}/index.html`);
-  mainWindow.loadURL(`https://google.com`);
+  mainWindow.loadURL(`file://${__dirname}/index.html`);
+  //mainWindow.loadURL(`https://google.com`);
   mainWindow.maximize();
 
-  mainWindow.webContents.executeJavaScript(`document.querySelector('input[name="q"]').value = "testing this"`, function (result) {
-    console.log(result)
-  })
+  // mainWindow.webContents.executeJavaScript(`document.querySelector('input[name="q"]').value = "testing this"`, function (result) {
+  //   console.log(result)
+  // });
+  
 
 
   // Open the DevTools.
