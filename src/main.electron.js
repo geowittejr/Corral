@@ -20,7 +20,7 @@ const createWindow = () => {
   mainWindow.loadURL(`file://${__dirname}/index.html`);
   //mainWindow.loadURL(`https://google.com`);
   mainWindow.maximize();
-
+  
   // mainWindow.webContents.executeJavaScript(`document.querySelector('input[name="q"]').value = "testing this"`, function (result) {
   //   console.log(result)
   // });
