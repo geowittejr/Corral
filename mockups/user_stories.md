@@ -20,3 +20,5 @@
 - I want to track the web browsing trail that occurs when I click on each individual search result in a web search so that I can see the history of each page that I visited in the order I visited it.
 - I want to be able to "star" web pages that I visit to mark them as important so that they show up prominently in the web search.
 - I want to be able to associate a web search with a specific web research project so that I can group my searching history under a project that I will remember and will be able to revisit later when reviewing that project.
+
+
